@@ -17,7 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/luan', fn() => 'olá luan');
-
 // Route::get('/todo/search', TodoController::class, 'search');
 Route::resource('/todo', TodoController::class);
