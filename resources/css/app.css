@@ -2,18 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn{ 
+  @apply p-2 text-center rounded transition-all cursor-pointer;
+}
+.btn-actions{
+  @apply btn mr-1 w-16;
+}
+.todo{
+  @apply bg-gray-800 px-4 py-2 mb-2 flex justify-between rounded items-center border border-gray-700
+}
 
+.action-title{
+  @apply pb-4 my-8 flex justify-between border-b border-gray-800;
+}
 
-/* .index-title::after{
-  position: absolute;
+.title::before{
   content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: white;
-  top: 50%;
-  left: -4px;
-  margin-left: auto;
-  border-radius: 5px;
-  opacity: .3;
-} */
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+}
